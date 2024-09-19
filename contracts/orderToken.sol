@@ -5,10 +5,10 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 contract OrderToken {
-    using SafeERC20 for IERC20; // Add this line to use SafeERC20
+    using SafeERC20 for IERC20; 
 
     struct Order {
-        address maker; // Changed 'makers' to 'maker'
+        address maker; 
         address tokenToBuy;
         address tokenToSell;
         uint256 amountToBuy;
